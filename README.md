@@ -1,5 +1,5 @@
 # LinkTree
-This project is a simple LinkTree built with one HTML file. The purpose of this project is to create a customizable and easily editable LinkTree for your social media profiles.
+This project is a simple LinkTree built with one HTML file. The purpose of this project is to create a customizable and easily editable LinkTree for your social media profiles. A live [demo](https://Yejia995.github.io/LinkTree/) is hosting on Github Pages.
 
 ## Getting Started
 Download the HTML file and open it with a text editor of your choice.
@@ -16,7 +16,7 @@ You can easily customize the LinkTree to match your personal style and social me
 - To change the color scheme, edit the CSS variables at the top of the HTML file.
 
 ## Credits
-This project is freely available for anyone to use and modify. You do **NOT** need to indicate the author's information
+This project is freely available for anyone to use and modify. You do **NOT** need to indicate the author's information.
 
 ## License
 This project is licensed under the MIT License. Feel free to modify and distribute the code as needed.
