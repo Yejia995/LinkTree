@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <title>Username | Links</title>
+</head>
+
+<body>
+  <div id="avatar">
+    <img src="https://github.githubassets.com/favicons/favicon.svg" alt="Profile Picture">
+  </div>
+
+  <!-- Username and link -->
+  <div id="username">
+    <a href="https://example.com" target="_blank" id="username">@Username</a>
+  </div>
+
+  <!-- Social Network Links -->
+  <div id="column">
+    <a id="button" href="https://github.com/Username" target="_blank">Github</a>
+    <a id="button" href="https://twitter.com/Username" target="_blank">Twitter</a>
+    <a id="button" href="https://discord.gg/Username" target="_blank">Discord</a>
+    <a id="button" href="https://www.buttonedin.com/in/Username" target="_blank">Linkedin</a>
+    <a id="button" href="https://www.facebook.com/Username" target="_blank">Telegram</a>
+    <a id="button" href="https://www.instagram.com/Username" target="_blank">Instagram</a>
+  </div>
+</body>
+
+</html>
+
+<style type="text/css">
+  :root {
+    --font: 'Ubuntu', sans-serif;
+    --base_color: #333;
+    --background: #EEE;
+    --foreground: #FFF;
+    --duration: 0.3s;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --base_color: #DDD;
+      --background: #111;
+      --foreground: #222;
+    }
+  }
+
+  body {
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    font-family: var(--font);
+    background: var(--background);
+    animation-fill-mode: forwards;
+    animation: 1s ease-out enter;
+  }
+
+  @keyframes enter {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #avatar,
+  #avatar img {
+    width: 96px;
+    height: 96px;
+    display: block;
+    border-radius: 50%;
+    margin: 15vh auto 15px;
+  }
+
+  #username {
+    font-family: var(--font);
+    color: var(--base_color);
+    margin: auto auto 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #column {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    width: auto;
+  }
+
+  #button {
+    padding: 10px;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 100vh;
+    text-decoration: none;
+    color: var(--base_color);
+    background: var(--foreground);
+    transition: all var(--duration);
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  #button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all var(--duration);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+</style>
